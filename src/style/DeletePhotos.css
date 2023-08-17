@@ -1,0 +1,19 @@
+.delete-photos {
+    bottom: 70px;
+    display: none;
+    background-color: #E74C3C;
+}
+
+.delete-photos:hover {
+    background-color: #C0392B;
+}
+
+@media (max-width: 480px) {
+    .delete-photos {
+        bottom: 58px;
+    }
+}
+
+.delete-photos.active {
+    display: flex;
+}

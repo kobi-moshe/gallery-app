@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+    .app {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+        margin: 40px auto;
+    }
+}
+
+.add-photo,
+.delete-photos {
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    background-color: #3498DB;
+}
+
+.edit-button:hover {
+    background-color: #2980B9;
+}
+
+.edit-button,
+.delete-photos {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+@media (max-width: 480px) {
+
+    .edit-button,
+    .delete-photos {
+        width: 40px;
+        height: 40px;
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+.delete-photos {
+    bottom: 70px;
+    display: none;
+    background-color: #E74C3C;
+}
